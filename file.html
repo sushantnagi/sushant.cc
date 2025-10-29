@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sushant Nagi</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Desktop layout - two columns */
+        @media screen and (min-width: 1024px) {
+            .container {
+                display: flex;
+                gap: 40px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .text-content {
+                flex: 1;
+                padding-right: 20px;
+            }
+            
+            .media-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+            }
+            
+            .media-content img,
+            .media-content video {
+                max-width: 100% !important;
+                height: auto;
+                margin: 10px 0;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+        }
+        
+        /* Tablet and mobile - single column */
+        @media screen and (max-width: 1023px) {
+            .container {
+                display: block;
+            }
+            
+            .text-content,
+            .media-content {
+                width: 100%;
+            }
+            
+            img, video {
+                max-width: 100% !important;
+                height: auto;
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        
+        /* Mobile specific adjustments */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+                text-align: left;
+            }
+            
+            p {
+                font-size: 16px;
+                text-align: left;
+            }
+            
+            footer {
+                text-align: left;
+                margin-top: 30px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-content">
+            <header>
+                <h1>Sushant Nagi</h1>
+            </header>
+
+            <main>
+               <p>Hello, I am Sushant Nagi.</p>
+<p>नमस्कार, मैं सुशांत नागी हूं।</p>
+<p>ਹੈਲੋ, ਮੈਂ ਸੁਸ਼ਾਂਤ ਨਾਗੀ ਹਾਂ।</p>
+<p>ہیلو، میں سوشانت ناگی ہوں۔</p> <!-- Urdu -->
+<p>مرحباً، أنا سوشانت ناغي.</p> <!-- Arabic -->
+<p>こんにちは、私はスシャント・ナーギです。</p> <!-- Japanese -->
+<p>안녕하세요, 저는 수샨트 나기입니다.</p> <!-- Korean -->
+<p>你好，我是苏尚特·纳吉。</p> <!-- Chinese (Simplified) -->
+<p>Bonjour, je suis Sushant Nagi.</p> <!-- French -->
+<p>Hallo, ich bin Sushant Nagi.</p> <!-- German -->
+<p>Здравствуйте, я Сушант Наги.</p> <!-- Russian -->
+<p>Hola, soy Sushant Nagi.</p> <!-- Spanish -->
+<p>Ciao, sono Sushant Nagi.</p> <!-- Italian -->
+<p>வணக்கம், நான் சுஷாந்த் நாகி.</p> <!-- Tamil -->
+<p>హలో, నేను సుశాంత్ నాగి.</p> <!-- Telugu -->
+<p>Olá, eu sou Sushant Nagi.</p> <!-- Portuguese -->
+            </main>
+
+            <footer>
+                <small>&copy; Sushant Nagi 2025</small>
+            </footer>
+        </div>
+
+        <div class="media-content">
+            <img src="sushant.png" alt="My photo" style="max-width:600px;">
+            <video src="sushant.mp4" controls style="max-width:600px;"></video>
+        </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
