@@ -15,13 +15,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="language-switcher">
+        <select id="languageSelect" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="ru">Русский</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+        </select>
+    </div>
     <div class="site-shell">
         <header class="hero" id="top">
                     <div class="identity">
                         <div class="logo-wrap">
                             <img src="logo.png" alt="Sushant crowned lion logo">
                         </div>
-                        <h1 class="sushant">Hello, I am Sushant</h1>
+                        <h1 class="sushant" data-i18n="greeting">Hello, I am Sushant</h1>
                     </div>
                     
                 </header>
@@ -40,32 +52,32 @@
                 <section class="links" id="connect" aria-label="Social links">
             <div class="links-grid">
                 <a class="link-card" href="mailto:contact@sushant.cc" target="_blank" rel="noreferrer noopener">
-                    <span class="label">&#x1F4E7; Email</span>
-                    <span class="value">contact@sushant.cc</span>
+                    <span class="label" data-i18n="email_label">&#x1F4E7; Email</span>
+                    <span class="value" data-i18n="email_value">contact@sushant.cc</span>
                 </a>
                 <a class="link-card" href="https://sushant.cc" target="_blank" rel="noreferrer noopener">
-                    <span class="label">&#x1F310; Website</span>
-                    <span class="value">sushant.cc</span>
+                    <span class="label" data-i18n="website_label">&#x1F310; Website</span>
+                    <span class="value" data-i18n="website_value">sushant.cc</span>
                 </a>
                 <a class="link-card" href="https://youtube.com/@sushanity" target="_blank" rel="noreferrer noopener">
-                    <span class="label">&#x25B6;&#xFE0F; YouTube</span>
-                    <span class="value">@sushanity</span>
+                    <span class="label" data-i18n="youtube_label">&#x25B6;&#xFE0F; YouTube</span>
+                    <span class="value" data-i18n="youtube_value">@sushanity</span>
                 </a>
                 <a class="link-card" href="https://instagram.com/sushanity" target="_blank" rel="noreferrer noopener">
-                    <span class="label">&#x1F4F8; Instagram</span>
-                    <span class="value">@sushanity</span>
+                    <span class="label" data-i18n="instagram_label">&#x1F4F8; Instagram</span>
+                    <span class="value" data-i18n="instagram_value">@sushanity</span>
                 </a>
                 <a class="link-card" href="https://x.com/sushanity" target="_blank" rel="noreferrer noopener">
-                    <span class="label">&#x1F426; X (Twitter)</span>
-                    <span class="value">@sushanity</span>
+                    <span class="label" data-i18n="twitter_label">&#x1F426; Twitter</span>
+                    <span class="value" data-i18n="twitter_value">@sushanity</span>
                 </a>
                 <a class="link-card" href="https://bsky.app/profile/sushant.cc" target="_blank" rel="noreferrer noopener">
-                    <span class="label">&#x1F98B; Bluesky</span>
-                    <span class="value">sushant.cc</span>
+                    <span class="label" data-i18n="bluesky_label">&#x1F98B; Bluesky</span>
+                    <span class="value" data-i18n="bluesky_value">sushant.cc</span>
                 </a>
                 <a class="link-card" href="https://hangout.sushant.cc" target="_blank" rel="noreferrer noopener">
-                    <span class="label">&#x1F3AE; Discord</span>
-                    <span class="value">hangout.sushant.cc</span>
+                    <span class="label" data-i18n="discord_label">&#x1F3AE; Discord</span>
+                    <span class="value" data-i18n="discord_value">hangout.sushant.cc</span>
                 </a>
             </div>
         </section>
@@ -89,8 +101,8 @@
         <div class="footer-divider"></div>
 
         <footer class="footer">
-            <p>&copy; 2025 Sushant Nagi. All Rights Reserved.</p>
-            <p>New Delhi, Republic of India</p>
+            <p data-i18n="footer_copyright">&copy; 2025 Sushant Nagi. All Rights Reserved.</p>
+            <p data-i18n="footer_location">New Delhi, Republic of India</p>
         </footer>
     </div>
 
