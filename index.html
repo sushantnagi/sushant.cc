@@ -1,153 +1,100 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sushant Nagi</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <style>
-        /* Base styles */
-        body {
-            margin: 0;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
-        
-        /* Desktop layout - two columns */
-        @media screen and (min-width: 1024px) {
-            .container {
-                display: flex;
-                gap: 40px;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            
-            .text-content {
-                flex: 1;
-                padding-right: 20px;
-            }
-            
-            .media-content {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: left;
-            }
-            
-            .media-content img,
-            .media-content video {
-                max-width: 100% !important;
-                height: auto;
-                margin: 10px 0;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            }
-        }
-        
-        /* Tablet and mobile - single column */
-        @media screen and (max-width: 1023px) {
-            .container {
-                display: block;
-            }
-            
-            .text-content,
-            .media-content {
-                width: 100%;
-            }
-            
-            img, video {
-                max-width: 100% !important;
-                height: auto;
-                display: block;
-                margin: 10px 0;
-            }
-        }
-        
-        h1 {
-            font-size: 2em;
-            margin: 20px 0;
-        }
-        
-        p {
-            line-height: 1.6;
-            margin: 15px 0;
-        }
-        
-        /* Mobile specific adjustments */
-        @media screen and (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            
-            h1 {
-                font-size: 1.8em;
-                text-align: left;
-            }
-            
-            p {
-                font-size: 16px;
-                text-align: left;
-            }
-            
-            footer {
-                text-align: left;
-                margin-top: 30px;
-            }
-        }
-        
-        @media screen and (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
-            
-            h1 {
-                font-size: 1.5em;
-            }
-            
-            p {
-                font-size: 14px;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="text-content">
-            <header>
-                <h1>Sushant Nagi</h1>
-            </header>
+    <div class="site-shell">
+        <header class="hero" id="top">
+                    <div class="identity">
+                        <div class="logo-wrap">
+                            <img src="logo.png" alt="Sushant crowned lion logo">
+                        </div>
+                        <h1 class="sushant">Hello, I am Sushant</h1>
+                    </div>
+                    
+                </header>
+        <div class="main-layout">
+            <div class="left-column">
+                <!-- <header class="hero" id="top">
+                    <div class="identity">
+                        <div class="logo-wrap">
+                            <img src="logo.png" alt="Sushant crowned lion logo">
+                        </div>
+                        <h1>Hello, I am Sushant</h1>
+                    </div>
+                    
+                </header> -->
 
-            <main>
-               <p>Hello, I am Sushant Nagi.</p>
-<p>नमस्कार, मैं सुशांत नागी हूं।</p>
-<p>ਹੈਲੋ, ਮੈਂ ਸੁਸ਼ਾਂਤ ਨਾਗੀ ਹਾਂ।</p>
-<p>ہیلو، میں سوشانت ناگی ہوں۔</p> <!-- Urdu -->
-<p>مرحباً، أنا سوشانت ناغي.</p> <!-- Arabic -->
-<p>こんにちは、私はスシャント・ナーギです。</p> <!-- Japanese -->
-<p>안녕하세요, 저는 수샨트 나기입니다.</p> <!-- Korean -->
-<p>你好，我是苏尚特·纳吉。</p> <!-- Chinese (Simplified) -->
-<p>Bonjour, je suis Sushant Nagi.</p> <!-- French -->
-<p>Hallo, ich bin Sushant Nagi.</p> <!-- German -->
-<p>Здравствуйте, я Сушант Наги.</p> <!-- Russian -->
-<p>Hola, soy Sushant Nagi.</p> <!-- Spanish -->
-<p>Ciao, sono Sushant Nagi.</p> <!-- Italian -->
-<p>வணக்கம், நான் சுஷாந்த் நாகி.</p> <!-- Tamil -->
-<p>హలో, నేను సుశాంత్ నాగి.</p> <!-- Telugu -->
-<p>Olá, eu sou Sushant Nagi.</p> <!-- Portuguese -->
-            </main>
+                <section class="links" id="connect" aria-label="Social links">
+            <div class="links-grid">
+                <a class="link-card" href="mailto:contact@sushant.cc" target="_blank" rel="noreferrer noopener">
+                    <span class="label">&#x1F4E7; Email</span>
+                    <span class="value">contact@sushant.cc</span>
+                </a>
+                <a class="link-card" href="https://sushant.cc" target="_blank" rel="noreferrer noopener">
+                    <span class="label">&#x1F310; Website</span>
+                    <span class="value">sushant.cc</span>
+                </a>
+                <a class="link-card" href="https://youtube.com/@sushanity" target="_blank" rel="noreferrer noopener">
+                    <span class="label">&#x25B6;&#xFE0F; YouTube</span>
+                    <span class="value">@sushanity</span>
+                </a>
+                <a class="link-card" href="https://instagram.com/sushanity" target="_blank" rel="noreferrer noopener">
+                    <span class="label">&#x1F4F8; Instagram</span>
+                    <span class="value">@sushanity</span>
+                </a>
+                <a class="link-card" href="https://x.com/sushanity" target="_blank" rel="noreferrer noopener">
+                    <span class="label">&#x1F426; X (Twitter)</span>
+                    <span class="value">@sushanity</span>
+                </a>
+                <a class="link-card" href="https://bsky.app/profile/sushant.cc" target="_blank" rel="noreferrer noopener">
+                    <span class="label">&#x1F98B; Bluesky</span>
+                    <span class="value">sushant.cc</span>
+                </a>
+                <a class="link-card" href="https://hangout.sushant.cc" target="_blank" rel="noreferrer noopener">
+                    <span class="label">&#x1F3AE; Discord</span>
+                    <span class="value">hangout.sushant.cc</span>
+                </a>
+            </div>
+        </section>
+            </div>
 
-            <footer>
-                <small>&copy; Sushant Nagi 2025</small>
-            </footer>
+            <div class="divider"></div>
+
+            <div class="right-column">
+                <div class="media-stack">
+                    <div class="photo-frame">
+                        <img src="sushant.png" alt="Portrait of Sushant">
+                    </div>
+                    <!-- <video src="sushant.mp4" controls playsinline></video> -->
+                </div>
+            </div>
+            <div class="video-stack">
+                <video src="sushant.mp4" controls playsinline></video>
+            </div>
         </div>
 
-        <div class="media-content">
-            <img src="sushant.png" alt="My photo" style="max-width:600px;">
-            <video src="sushant.mp4" controls style="max-width:600px;"></video>
-        </div>
+        <div class="footer-divider"></div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Sushant Nagi. All Rights Reserved.</p>
+            <p>New Delhi, Republic of India</p>
+        </footer>
     </div>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js" defer></script>
 </body>
 </html>
+
